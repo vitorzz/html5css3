@@ -9,7 +9,10 @@
 /* Principal */
 body{
 	font-family: 'Open Sans'; sans-serif;
-	background-color: #8e8e8e;
+	/*background-color: #8e8e8e; */
+	background-image: url("../imagens/sun.jpg");
+	background-attachment: fixed; /* fixa o background */
+	background-size: cover; /* manter o tamanho de forma responsiva */
 	font-size: 1em; /*1 em = 16px */
 }
 
