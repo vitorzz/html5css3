@@ -10,17 +10,21 @@
 	<!-- A linha abaixo "garante" o layout responsivo nos diversos dispositivos mobile -->
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link rel="stylesheet" href="css/style.css">
-	
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 </head>
 <body>
 	<!-- estrutura principal -->
 	<div id="main">
-	<!-- cabeçalho -->
+	<!-- Cabeçalho -->
 	<header>
+		<section style="text-align:center">
 		<img src="imagens/madara.png" alt="monstro">
+	</section>
 	</header>
 	<!-- menu -->
-	<nav>
+	<nav class="Menu"><!-- Classe usada para fixar o menu no JS -->
+		<!-- &#9776 desenhando 3 linhas horizontais -->
+				<a href="#" class="Mobile">&#9776 Menu</a>
 		<ul>
 			<li><a href="#">Home</a></li>
 			<li><a href="#">Sobre</a></li>
@@ -36,7 +40,7 @@
 	</nav>
 
 	<!-- conteúdo -->
-	<section id="banner">
+	<section id="banner" style="text-align:center">
 		<img src="imagens/anime.png" alt="variedades">
 		<h1>Primeiros passos com HTML5 + CSS3</h1>
 	</section>
@@ -70,5 +74,8 @@
 	</footer>
 	
 	</div>
+<script src="js/menuresponsivo.js "></script>	
+<script src="js/fixamenu.js "></script>
+<script src="js/removeclick.js "></script>
 </body>
 </html>
