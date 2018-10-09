@@ -40,17 +40,16 @@ header img{
 }
 
 
-
-
-
-/* Tratamento responsivo */
+/**** menu ****/
 
 img {
 	max-width: 100%; /* todas as imagens do site ficam responsiva */
 }
-
+/*********** MENU RESPONSIVO ***********/
 nav{
 	width: 100%;
+	max-width: 1024px;
+	position: absolute;
 }
 
 nav ul{
@@ -58,19 +57,32 @@ nav ul{
 	padding: 0px;
 	margin: 0px;
 	background-color: #ff0000;
-	overflow: hidden; /* completar a largura total com o background (formar o menu)*/
+	/*overflow: hidden;  completar a largura total com o background (formar o menu)*/
 }
 
 nav > ul > li{
 	float: left;
+	width: 25%; /* 4 elementos do menu primário */
 }
-
+nav > ul > li > a{
+	font-size: 1.125em;
+}
 nav ul li a{
+	background-color: #ff0000;
 	text-decoration: none;
 	color: #FFF0F5;
 	padding: 15px;
 	display: block;
+	text-align:center;
 }
+nav ul li a{
+	background-color: #ff0000;
+	text-decoration: none;
+	color: #FFF0F5;
+	padding: 15px;
+	display: block;
+	text-align: center;
+	}
 
 nav ul li a:hover{
 	background-color: #000000;
@@ -83,13 +95,12 @@ nav li ul{
 
 nav li:hover ul{
 	display: block;
-	position: absolute;
 }
 
 /* Desenhando um triângulo no css */
 
 .Detalhes:after{ /* Atributo after (após o conteudo)*/
-	content: ''; /* Content: insere um conteudo no css */
+	content:''; /* Content: insere um conteudo no css */
 	color: #FFFFFF;
 	border: 5px solid transparent;
 	/* border-left-color: #800000;
@@ -111,12 +122,41 @@ nav li:hover ul{
 	z-index: 3;
 }
 
+	/***** RODAPÉ *****/
+	footer{
+		width: 100%;
+		background-color: #ff0000;
+		margin-top: 50px;
+		padding-top: 3px;
+		padding-bottom: 3px;
+		text-align: center;
+		color: #ffffff;
+		font-size: 0.75em;
+
+	}
+
 /***** Tratamento responsivo ********/
+
+/**** menu mobile ****/
 
 @media screen and (max-width: 480px){
 	body{
 		margin: 0px;
 	}
+#main{ 
+	margin-top: 0px;
+}
+	/*** cabeçalho ***/
+
+	header{
+ 	text-align: center;
+ 	margin-bottom: 0px;
+ 	}
+
+ 	 header img {
+ 	margin-top: 0px;
+ 	margin-left: 0px;
+ }
 	/* menu hamburguer */
 	.Mobile{
 		display: block;
@@ -125,20 +165,38 @@ nav li:hover ul{
 		text-decoration: none;
 		padding: 15px;
 }
-nav > ul > li{
+	nav > ul > li{
 	float: none;
+	width: 100%;
 	}
 
-nav ul{
+	nav ul{
 	width: 100%;
 	display: none;
 	}
 
+    nav ul li a{
+		font-size: 0.875em;
+		padding: 12px;
+		text-align: left;
+	}         
+
 	nav ul li a:hover{
-		transition: all 0s; /* remover efeito de trans~ição */
+		transition: all 0s; /* remover efeito de transição */
 
 	}
 	nav li ul li{
 		background-color: #000000;
+	}
+
+	nav li  ul li a{
+		background-color:#000000;
+		padding-left: 40px;
+	}
+
+	/*** IMPORTANTE para UX no dispositivo mobile, não exibir o 2º nivel do menu enquanto o conteudo
+	não for clicado **/
+	nav li:hover ul{
+		display: none; 
 	}
 }

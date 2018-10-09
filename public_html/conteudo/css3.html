@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+	<meta charset="UTF-8">
+	<!-- favicon -->
+	<link rel ="icon" href="imagens/aaa.png">
+	<title>Home - html5 css3</title>
+	<!-- SEO Importante -->
+	<meta name ="description" content ="Aprenda html5 e css3 de forma simples e prática">
+	<!-- A linha abaixo "garante" o layout responsivo nos diversos dispositivos mobile -->
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="../css/style.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+</head>
+<body>
+	<!-- estrutura principal -->
+	<div id="main">
+	<!-- Cabeçalho -->
+	<header>
+		<section style="text-align:center">
+		<img src="../imagens/madara.png" alt="monstro">
+		</section>
+	</header>
+	<!-- menu -->
+	<nav class="Menu"><!-- Classe usada para fixar o menu no JS -->
+		<!-- &#9776 desenhando 3 linhas horizontais -->
+				<a href="#" class="Mobile">&#9776 Menu</a>
+		<ul>
+			<li><a href="../index.html">Home</a></li>
+			<li><a href="../sobre.html">Sobre</a></li>
+			<li><a href="#" class="Detalhes">Conteúdo</a>
+				<ul>
+				<li><a href="html5.html">HTML</a></li>
+				<li><a href="css3.html">CSS</a></li>
+				<li><a href="https://www.youtube.com/playlist?list=PLbEOwbQR9lqyuy7U1YjGgBv0x2Hzuw569" target="_blank">JavaScript</a></li>
+				</ul>
+			</li>
+			<li><a href="../contato.html">Contato</a></li>
+		</ul>
+	</nav>
+
+	<!-- rodapé -->
+	<footer>
+		<p>©2018 - Professor José de Assis</p>
+	</footer>
+	
+	</div>
+<script src="../js/menuresponsivo.js "></script>	
+<script src="../js/fixamenu.js "></script>
+<script src="../js/removeclick.js "></script>
+</body>
+</html>
