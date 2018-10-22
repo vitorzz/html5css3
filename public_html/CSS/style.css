@@ -156,6 +156,44 @@ nav li:hover ul{
 	font-size: 1.65em;
 }
 
+/************ bloco *************/
+
+#destaque{
+	max-width: 1024px;
+	height: 320px;
+}
+
+.blocos{
+	width: 30.76%; /* ---- (325/1024)*100 ----*/
+	height: 320px;
+	float: left;
+	margin-left: 1.8%; /*---- (20/1024)*100 ----*/
+	border: 1px solid #000000;
+	text-align: center;
+	position: relative; /* posicionamento do botão */
+	background-color: #ffffff;
+}
+
+.blocos p{
+	padding: 0px 10px 0px 10px;
+	text-align: center;
+}
+
+.blocos a{
+	width: 80px;
+	padding: 10px 0px 10px 0px;
+	display: block;
+	background-color: #000000;
+	color: #ffffff;
+	text-decoration: none;
+	font-size: 0.875em;
+	position: absolute;
+	right: 10px;
+	bottom: 10px;
+
+}
+
+
 /******** Formulário de contato ********/
 #contato{
 	width: 70%;
@@ -202,26 +240,66 @@ nav li:hover ul{
 
 /***** Tratamento responsivo ********/
 
+
+/***** 1° ponto de quebra ******/
+
+@media screen and (max-width: 1058px){
+	/****** principal ******/
+		body{
+		margin: 0px;
+	}
+		#main{ 
+	margin-top: 0px;
+	}
+	#banner{
+		margin-top: 10px;
+	}
+}
+
+/***** 2° ponto de quebra ******/
+@media screen and (max-width: 630px){
+	#banner{
+		margin-top: -40px;
+	}
+}
+
+
 /**** menu mobile ****/
 
 @media screen and (max-width: 480px){
-	body{
-		margin: 0px;
-	}
-#main{ 
-	margin-top: 0px;
-}
+
 	/*** cabeçalho ***/
 
 	header{
  	text-align: center;
  	margin-bottom: 0px;
  	}
+ #banner{
+	margin-top: 110px;
+	height: 0;
+
+}
+
+#banner h1{
+	font-size: 1.5em;
+	text-align: center;
+}
+
+#heading{
+	width: 90%;
+	padding:25px;
+	margin-top: 60px;
+}
+
+#heading h2{
+	font-size: 1.2em;
+}
 
  	 header img {
  	margin-top: 0px;
  	margin-left: 0px;
  }
+
 	/* menu hamburguer */
 	.Mobile{
 		display: block;
@@ -264,6 +342,20 @@ nav li:hover ul{
 	nav li:hover ul{
 		display: none; 
 	}
+	/**** blocos ****/
+	#destaque{
+		max-width: 315px;
+		height: auto;
+		margin: 0 auto;
+	}
+
+	.blocos{
+		width: 100%;
+		height: 320px;
+		float: none;
+		margin: 0;
+		margin-bottom: 20px;
+	}
 }
 
 	.heading2{
@@ -278,4 +370,4 @@ nav li:hover ul{
 		font-size: 0.75em;
 		text-align: center;
 	}
-	.
+	
