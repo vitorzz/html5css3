@@ -249,7 +249,7 @@ nav li:hover ul{
 		margin: 0px;
 	}
 		#main{ 
-	margin-top: 0px;
+		margin-top: 0px;
 	}
 	#banner{
 		margin-top: 10px;
@@ -257,11 +257,38 @@ nav li:hover ul{
 }
 
 /***** 2° ponto de quebra ******/
-@media screen and (max-width: 630px){
+@media screen and (max-width: 792px){
 	#banner{
-		margin-top: -40px;
+		margin-top: -20px;
+		}
+	#heading{
+		margin-top: -60px;
+	}
+
+}
+
+/***** 3° ponto de quebra ******/
+@media screen and (max-width: 622px){
+	#banner{
+		margin-top: -20px;
+	}
+	#heading{
+		margin-top: -80px;
+	}
+
+}
+
+/***** 4° ponto de quebra ******/
+@media screen and (max-width: 620px){
+	#banner{
+		margin-top: -45px;
+		font-size: 0.550em;
 	}
 }
+
+
+
+
 
 
 /**** menu mobile ****/
@@ -281,7 +308,7 @@ nav li:hover ul{
 }
 
 #banner h1{
-	font-size: 1.5em;
+	font-size: 3.5em;
 	text-align: center;
 }
 
