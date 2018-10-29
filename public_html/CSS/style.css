@@ -326,6 +326,10 @@ nav li:hover ul{
  	margin-top: 0px;
  	margin-left: 0px;
  }
+ iframe{
+ 	width: 400px;
+ 	height: 230px;
+ }
 
 	/* menu hamburguer */
 	.Mobile{
